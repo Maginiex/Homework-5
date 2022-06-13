@@ -1,0 +1,52 @@
+# написать функуию по типу [x: int, n: int, a: str] -> any:
+'''from typing import Union, Any
+x = input('введите число')
+n = input('еще одно')
+a = input('введите слово')
+def calc(x: int, n: int, a: str) -> any:
+      return x, n, a
+
+print(calc(x, n, a))'''
+# написать функуию по типу [x:str] -> int:
+'''x = input('введите слово')
+
+
+def chisla(x: str) -> int:
+    if x == str('десять'):
+        print(int('10'))
+    elif x == str('девять'):
+        print(int('9'))
+    else:
+        print('такого не знаю')
+
+# написать функуию для суммы чисел, для нее написать декоратор который возводит в степень результаты функции
+print(chisla(x))'''
+'''def calc(dec):
+    def sum_num():
+        x = int(input("ведите первое число х"))
+        y = int(input("ввведите второе число y"))
+        xy = x + y
+        degree = dec()
+        print("Сумма чисел = ", xy)
+        print("Степень из", degree, "суммы чисел x,y =", xy ** degree)
+    return sum_num
+
+
+@calc
+def step():
+    x = int(input("В какую степень возвести?"))
+    return x
+
+
+step()'''
+
+#для перебора массива испольховать yield достать 5-тый элемент массива используя next()
+'''def createGenerator():
+    for i in range(5):
+        yield i
+gen = createGenerator()
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))'''
